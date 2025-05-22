@@ -1,172 +1,304 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <style>
-        body {font-family: 'Montserrat';font-size: 22px;}
-        h1 {font-size: 2.5em;/* 40px/16=6.5em */}
-        img {margin-right: 50px;}
-    </style>
-    <title>pinetour</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PineTour</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+    }
+    header, footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    header p {
+      margin: 0;
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 60px;
+      margin-top: 80px;
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+      color: grey;
+      margin-bottom: 40px;
+    }
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 200px;
+    }
+    .image-gallery img {
+      width: 20%;
+    }
+    .tour-section {
+      display: flex;
+      max-width: 1000px;
+      margin: auto;
+      align-items: flex-start;
+    }
+    .tour-info {
+      flex: 1;
+    }
+    .tour-info h2 {
+      color: grey;
+      font-size: 20px;
+      margin: 0;
+    }
+    .tour-day {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .day-circle {
+      background-color: black;
+      color: green;
+      border-radius: 50%;
+      padding: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+    .day-desc {
+      margin-left: 20px;
+    }
+    .dotted-line {
+      border-left: 3px dotted black;
+      height: 40px;
+      margin-left: 30px;
+    }
+    .tour-image {
+      width: 400px;
+      margin-left: 100px;
+      margin-top: 30px;
+    }
+    .pricing-section {
+      max-width: 800px;
+      margin: 100px auto;
+      text-align: center;
+    }
+    .pricing-section h3 {
+      font-size: 22px;
+    }
+    .pricing-section p {
+      margin: 10px 0;
+    }
+    .pricing-options {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .pricing-card {
+      background-color: white;
+      border: 1px groove #ccc;
+      border-radius: 20px;
+      padding: 30px;
+      height: 250px;
+      width: 300px;
+      cursor: pointer;
+    }
+    .pricing-card ul, .pricing-card li {
+      color: grey;
+      font-size: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 5px 0;
+    }
+    .call-to-action {
+      background-color: dimgray;
+      text-align: center;
+      padding: 50px 0;
+      margin-top: 100px;
+    }
+    .call-to-action b {
+      color: white;
+      font-size: 30px;
+    }
+    .cta-button {
+      background-color: green;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .footer-social {
+      background-color: black;
+      padding: 30px 120px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo p {
+      margin: 0;
+      font-size: 25px;
+      color: white;
+    }
+    .social-icons a {
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .social-icons div {
+      display: flex;
+      align-items: center;
+      background-color: grey;
+      border-radius: 4px;
+      padding: 5px;
+      gap: 5px;
+    }
+    .social-icons img {
+      width: 22px;
+      height: 22px;
+    }
+    .social-icons p {
+      color: white;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .image-gallery img,
+      .tour-image {
+        width: 100%;
+      }
+      .tour-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .tour-image {
+        margin-left: 0;
+      }
+      .pricing-options {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-social {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin: 0%;">
-    <div style="background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;margin: 0;font-size: 15px;">pine</p>
-        <p style="text-align: center; color: white;margin: 0;font-size: 15px;">tour</p>
+<body>
+
+  <header>
+    <p>Pine</p>
+    <p>Tour</p>
+  </header>
+
+  <main>
+    <h1>Khuvsgul Lake</h1>
+    <h4>Trip</h4>
+
+    <div class="image-gallery">
+      <img src="./image/Frame 16.png" alt="img1" />
+      <img src="./image/Group 13.png" alt="img2" />
+      <img src="./image/Group 15.png" alt="img3" />
+      <img src="./image/image 27.png" alt="img4" />
     </div>
 
-    <div>
-        <h1 style="text-align: center; font-size: 40px; margin-top: 80px; font-size: 60px;">Khuvsgul Lake</h1>
-        <h4 style="text-align: center;color: grey;">trip</h4>
-    </div>
+    <div class="tour-section">
+      <div class="tour-info">
+        <h2>Tour | 6 days</h2>
+        <h1>Destination of our agency</h1>
 
-    <div style="display: flex; justify-content: center; padding-bottom: 200px;" margin-bottom: 200px;>
-        <img style="width: 20%;" src="./image/Frame 16.png">
-        <img style="width: 20%;" src="./image/Group 13.png">
-        <img style="width: 20%;" src="./image/Group 15.png">
-        <img style="width: 20%;" src="./image/image 27.png">
-
-    </div>
-
-    <div style="display: flex;width: 1000px;margin-left: 150px;">
-        <div>
-            <div>
-                <h2 style="color: grey; font-size: 20px;">Tour|s 6 days</h2>
-                <h1>Destination of our agency</h1>
-            </div>
-
-            <!-- D1 -->
-            <div style="display: flex;">
-                <div style="background-color: black;
-                border-radius: 100%;
-                color: green;
-                padding: 20px;
-                width: fit-content;
-                height: fit-content;">d1</div>
-                <div style="margin-left: 20px;">
-                    <p style="margin: 0;">sukhbaatar square</p>
-                    <p style="margin: 0;">ulaanbaator</p>
-                </div>
-            </div>
-
-            <div style="height: 40px;
-        border-left: 3px dotted black;
-        margin-left: 30px;"></div>
-
-            <!-- D2 -->
-            <div style="display: flex;">
-                <div style="background-color: black;
-                        border-radius: 100%;
-                        color: green;
-                        padding: 20px;
-                        width: fit-content;
-                        height: fit-content;">d2</div>
-                <div style="margin-left: 20px;">
-                    <p style="margin: 0;">khuvskul lake</p>
-                    <p style="margin: 0;">khuvskil</p>
-                </div>
-            </div>
-
-            <div style="height: 40px;
-                width: 0px;
-                border-left: 3px dotted black;
-                margin-left: 30px;"></div>
-
-
-            <!-- D3 -->
-            <div style="display: flex;">
-                <div style="background-color: black;
-                border-radius: 100%;
-                color: green;
-                padding: 20px;
-                width: fit-content;
-                height: fit-content;">d3</div>
-                <div style="margin-left: 20px;">
-                    <p style="margin: 0;">bataa</p>
-                    <p style="margin: 0;">tsogoo</p>
-                </div>
-            </div>
+        <div class="tour-day">
+          <div class="day-circle">d1</div>
+          <div class="day-desc">
+            <p>Sukhbaatar Square</p>
+            <p>Ulaanbaatar</p>
+          </div>
         </div>
+        <div class="dotted-line"></div>
 
-        <img style="width: 400px; margin-left: 400px; margin-top: 30px;" src="./image/Group 26.png" />
-    </div>
-    <div style="margin: auto; width: 50%;">
-        <div style="text-align: center; margin-bottom: 40px;">
-            <p style="font-size: 20px; color: white; margin: 0;">Prising</p>
-            <p style="font-size: 44px; color: grey; margin: 10px;">Pricing of<br>Our agency</p>
+        <div class="tour-day">
+          <div class="day-circle">d2</div>
+          <div class="day-desc">
+            <p>Khuvsgul Lake</p>
+            <p>Khuvsgul</p>
+          </div>
         </div>
-        <div style="display: flex; width: fit-content; margin: auto;">
-            <div class="button"
-                style="margin-right: 20px;padding: 30px;background-color: white;border-style: groove;border-radius: 20px;height: 250px; cursor: pointer;">
-                <h3 style="font-size: 22px;">Starter pack</h3>
-                <ul style="color: grey; font-size: 18px;">
-                    <li>Trip</li>
-                    <li>Hotel</li>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                </ul>
-                <div>
-                    <p style="font-size: 28px; text-align: end; ">2100$</p>
-                </div>
-            </div>
-            <div class="button"
-                style="background-color: white; padding: 30px; border-style: groove; border-radius: 20px; height: 250px; cursor: pointer;">
-                <h3 style="font-size: 22px;">Luxury pack</h3>
-                <div style="color: grey; font-size: 18px; height: 100px;">
-                    <li>Starterpack</li>
-                    <li>Flight</li>
-                    <li>Cruise trip</li>
-                </div>
-                <div>
-                    <p style="font-size: 28px; text-align: end;">4200$</p>
-                </div>
-            </div>
+        <div class="dotted-line"></div>
+
+        <div class="tour-day">
+          <div class="day-circle">d3</div>
+          <div class="day-desc">
+            <p>Bataa</p>
+            <p>Tsogoo</p>
+          </div>
         </div>
-    </div>
+      </div>
+      <img class="tour-image" src="./image/Group 26.png" alt="Tour image" />
     </div>
 
-    <div
-        style="background-color: dimgray; text-align: center; padding-top: 50px; padding-bottom: 50px; margin-top: 100px;">
-        <b style="color: white; font-size: 30px;">Are you ready</b>
-        <div style="margin: 5px;">
-            <a href="2.html">
-                <button
-                    style="background-color: green; border-radius: 4px; color: white; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">order
-                    now
-                </button>
-            </a>
+    <section class="pricing-section">
+      <p style="font-size: 20px; color: gray; margin: 0;">Pricing</p>
+      <p style="font-size: 44px; color: grey; margin: 10px;">Pricing of<br />Our Agency</p>
+      <div class="pricing-options">
+        <div class="pricing-card">
+          <h3>Starter Pack</h3>
+          <ul>
+            <li>Trip</li>
+            <li>Hotel</li>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+          </ul>
+          <p style="font-size: 28px; text-align: end;">$2100</p>
         </div>
-    </div>
+        <div class="pricing-card">
+          <h3>Luxury Pack</h3>
+          <ul>
+            <li>Starter Pack</li>
+            <li>Flight</li>
+            <li>Cruise Trip</li>
+          </ul>
+          <p style="font-size: 28px; text-align: end;">$4200</p>
+        </div>
+      </div>
+    </section>
 
-    <div
-        style="background-color: black; padding-top: 30px; padding-bottom: 80px; padding-left: 120px; padding-right: 120px;">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin: 20px;">
-            <div>
-                <p style="color: white; margin: 0; font-size: 25px;">Pine</p>
-                <p style="color: white; margin: 0; font-size: 25px;">Tour.</p>
-            </div>
-            <div style="display: flex;">
-                <a href="https://www.facebook.com/" style="text-decoration: none; padding-left: 30px;">
-                    <div style="display: flex; border-radius: 4px; align-items: center; background-color: grey; padding: 0px">
-                        <img src="./image/download.png" alt="facebook" style="width: 22px; height: 22px">
-                        <p style="color: white; font-size: 14px; margin: 0;">facebook</p>
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/" style="text-decoration: none;">
-                    <div
-                        style="display: flex; border-radius: 4px; align-items: center; background-color: grey; padding: 0px">
-                        <img src="./image/download.jpeg" alt="instagram" style="width: 22px; height: 22px ">
-                        <p style="color: white; font-size: 14px; margin: 0;">instagram</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <div class="call-to-action">
+      <b>Are you ready?</b>
+      <div>
+        <a href="2.html"><button class="cta-button">Order Now</button></a>
+      </div>
     </div>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <div class="footer-logo">
+        <p>Pine</p>
+        <p>Tour.</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/">
+          <div>
+            <img src="./image/download.png" alt="Facebook" />
+            <p>Facebook</p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/">
+          <div>
+            <img src="./image/download.jpeg" alt="Instagram" />
+            <p>Instagram</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
 </html>
-
-//

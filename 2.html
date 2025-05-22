@@ -1,70 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="widthdevice-width, inirial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Montserrat';
-            font-size: 22px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Your Trip</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      margin: 0;
+      background-color: white;
+    }
 
-        h1 {
-            font-size: 4.5em;
-            /* 60px/16=4.5em */
-        }
-    </style>
-    <title>order your Trip</title>
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      padding: 40px;
+      color: black;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      color: black;
+      padding: 10px;
+    }
+
+    .header,
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 10px 40px;
+    }
+
+    .header p,
+    .footer p {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 80px;
+      gap: 20px;
+    }
+
+    .plans button {
+      padding: 20px 40px;
+      border-radius: 5px;
+      border: 2px groove #ccc;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+
+    .form-box {
+      background-color: dimgray;
+      padding: 30px;
+      border-radius: 20px;
+      width: 300px;
+      color: white;
+      text-align: left;
+    }
+
+    .form-box label {
+      display: block;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    .form-box button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .socials {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      align-items: center;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .socials img {
+      height: 22px;
+      width: 22px;
+      margin-right: 8px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px 40px;
+    }
+  </style>
 </head>
 
-<body style="margin: 0; background-color: white;">
-    <div style="background-color: black; padding: 8px;">
-        <p style="color: white; text-align: center; font-size: 20px; margin: 0;">Pine</p>
-        <p style="color: white; text-align: center; font-size: 20px; margin: 0;">Tour.</p>
-    </div>
-    <h1 style="text-align: center; color: black; font-size: 50px; padding: 40px;">Order your trip</h1>
-    <h3 style="text-align: center; color: black; font-size: 30px; padding: 10px;">choose your plan</h3>
-    <div style="display: flex; justify-content: center; padding-bottom: 100px;">
-        <button
-            style="text-align: center; padding: 20px; border-style: groove; border-radius: 3px; margin-right: 20px;">Starter
-            pack</button>
-        <button style="text-align: center; padding: 20px; border-style: groove; border-radius: 3px;">Lucury
-            pack</button>
-    </div>
-    <h3 style="text-align: center; padding-top: 20px; padding-bottom: 50px;">Contact information</h3>
-    <div style="display: flex; justify-content: center;">
-        <div
-            style="text-align: center; margin-bottom: 200px; background-color: dimgray; width: fit-content; border-radius: 20px;">
-            <p style="font-size: 20px;">email</p>
-            <input>
-            <p style="font-size: 20px;">name</p>
-            <input type="number">
-            <p style="font-size: 20px;">phone</p>
-            <input>
-            <p style="font-size: 20px;">name</p>
-            <input type="password">
-            <button onclick="alert ('good')">sign</button>
-        </div>
-    </div>
+<body>
 
-    </div>
-    <div style="background-color: black; display: flex; justify-content: space-between;">
-        <div style="margin-left: 40px;">
-            <p style="color: white; font-size: 22px;">Pine</p>
-            <p style="color: white; font-size: 22px;">Tour.</p>
-        </div>
-        <div style="background-color: black;margin-left: 800px; margin-top: 20px;">
-            <a href="https://www.facebook.com/"
-                style="background-color: black;font-size: 22px;border-radius: 5px;color: white;"><img
-                    src="./download.png" style="height: 22px; width: 22px;">facebook</a>
-            <a href="https://www.instagram.com/"
-                style="background-color: black;font-size: 22px;border-radius: 5px;color: white;"><img
-                    src="./download.jpeg" style="height: 22px; width: 22px;">instagram</button>
-        </div>
-    </div>
+  <div class="header">
+    <p>Pine</p>
+    <p>Tour.</p>
+  </div>
 
+  <h1>Order Your Trip</h1>
+  <h3>Choose Your Plan</h3>
+
+  <div class="plans">
+    <button>Starter Pack</button>
+    <button>Luxury Pack</button>
+  </div>
+
+  <h3>Contact Information</h3>
+
+  <div class="form-container">
+    <div class="form-box">
+      <form onsubmit="alert('Order submitted!'); return false;">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Sign</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <p>Pine</p>
+      <p>Tour.</p>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/">
+        <img src="./download.png" alt="Facebook"> Facebook
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="./download.jpeg" alt="Instagram"> Instagram
+      </a>
+    </div>
+  </div>
 
 </body>
 
